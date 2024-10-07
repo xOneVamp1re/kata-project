@@ -84,6 +84,12 @@ legend {
   display: block;
 }
 
+.container {
+  margin-left: 16px;
+  margin-right: 16px;
+  background-color: silver;
+}
+
 @font-face {
   font-family: "TT Lakes";
   src: url(/sass/fonts/TTLakes-Bold.woff2);
@@ -104,6 +110,24 @@ legend {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
+}
+.header {
+  background-color: #fff;
+}
+.header__inner {
+  min-height: 87px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__bottom-border {
+  border-bottom: 1px solid #d9fff5;
+}
+
+@media (min-width: 768px) {
+  .header {
+    background-color: black;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
