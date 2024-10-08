@@ -3,3 +3,10 @@
     margin-right: 16px;
     background-color: silver;
 }
+
+@media (min-width: 768px) {
+    .container {
+    margin-left: 24px;
+    background-color: silver;
+    }
+}

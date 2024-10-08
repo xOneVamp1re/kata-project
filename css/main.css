@@ -90,6 +90,12 @@ legend {
   background-color: silver;
 }
 
+@media (min-width: 768px) {
+  .container {
+    margin-left: 24px;
+    background-color: silver;
+  }
+}
 @font-face {
   font-family: "TT Lakes";
   src: url(/sass/fonts/TTLakes-Bold.woff2);
