@@ -98,21 +98,21 @@ legend {
 }
 @font-face {
   font-family: "TT Lakes";
-  src: url(/sass/fonts/TTLakes-Bold.woff2);
+  src: url(sass/fonts/TTLakes-Bold.woff2);
   font-style: normal;
   font-weight: 700;
   font-display: swap;
 }
 @font-face {
   font-family: "TT Lakes";
-  src: url(/sass/fonts/TTLakes-Medium.woff2);
+  src: url(sass/fonts/TTLakes-Medium.woff2);
   font-style: normal;
   font-weight: 500;
   font-display: swap;
 }
 @font-face {
   font-family: "TT Lakes";
-  src: url(/sass/fonts/TTLakes-Regular.woff2);
+  src: url(sass/fonts/TTLakes-Regular.woff2);
   font-style: normal;
   font-weight: 400;
   font-display: swap;
