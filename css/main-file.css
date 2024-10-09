@@ -122,21 +122,21 @@ body {
 }
 @font-face {
   font-family: 'TTLakes';
-  src: url(/fonts/TTLakes-Regular.woff2) format(woff2);
+  src: url(fonts/TTLakes-Regular.woff2) format(woff2);
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'TTLakes';
-  src: url(/fonts/TTLakes-Medium.woff2) format(woff2);
+  src: url(fonts/TTLakes-Medium.woff2) format(woff2);
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'TTLakes';
-  src: url(/fonts/TTLakes-Bold.woff2) format(woff2);
+  src: url(fonts/TTLakes-Bold.woff2) format(woff2);
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -237,10 +237,8 @@ body {
   display: flex;
   overflow-x: scroll;
   overflow-y: auto;
-}
-.slider-nav__item {
   padding-top: 24px;
-  margin-bottom: 24px;
+  padding-bottom: 24px;
 }
 .slider-nav__link {
   display: inline-flex;
@@ -262,6 +260,10 @@ body {
   .slider-nav__items {
     display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
+  }
+  .slider-nav__link {
+    padding: 8px 19px 8px 18px;
   }
 }
 .active {
@@ -270,7 +272,7 @@ body {
   background: white;
 }
 
-.content__main-text {
+.content__text {
   color: #1b1c21;
   font-family: TTLakes;
   font-size: 14px;
@@ -278,6 +280,8 @@ body {
   line-height: 18px;
   letter-spacing: 0.2px;
   text-align: left;
+}
+.content__main-text {
   margin-bottom: 16px;
 }
 .content__full-text {
@@ -294,13 +298,50 @@ body {
 }
 .content__read-more::before {
   content: '';
-  background-image: url(/img/icons/ic_arrows.svg);
+  background-image: url(img/icons/ic_arrows.svg);
   background-repeat: no-repeat;
   background-position: center;
   width: 24px;
   height: 24px;
   order: -1;
   margin-right: 8px;
+}
+.content__img {
+  min-width: 320px;
+  min-height: 176px;
+  background-image: url(img/cps.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+@media (min-width: 768px) {
+  .content {
+    display: flex;
+  }
+  .content__text {
+    margin-right: 48px;
+    min-width: 312px;
+    min-height: 160px;
+  }
+  .content__full-text {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .content__img {
+    min-width: 360px;
+    min-height: 260px;
+    background-size: 100%;
+  }
+}
+@media (min-width: 1119.98px) {
+  .content__text {
+    margin-right: 36px;
+  }
+  .content__img {
+    min-width: 531px;
+    min-height: 383px;
+    background-size: 100%;
+  }
 }
 
 /*# sourceMappingURL=main-file.css.map */
