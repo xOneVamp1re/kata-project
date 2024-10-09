@@ -1,5 +1,5 @@
 .content {
-    &__main-text {
+    &__text {
     color: rgb(27, 28, 33);
     font-family: TTLakes;
     font-size: 14px;
@@ -7,7 +7,9 @@
     line-height: 18px;
     letter-spacing: 0.2px;
     text-align: left;
-    margin-bottom: 16px;
+    }
+    &__main-text {
+        margin-bottom: 16px;
     }
     &__full-text {
         display: none;
@@ -31,5 +33,51 @@
         height: 24px;
         order: -1;
         margin-right: 8px;
+    }
+    &__img::after {
+        content: '';
+        position: absolute;
+        width: 320px;
+        height: 230px;
+        background-image: url(/img/cps.png);
+        background-repeat: no-repeat;
+
+        
+}
+}
+
+@media (min-width: 768px) {
+    .content {
+        display: flex;
+        &__text {
+            margin-right: 48px;
+            min-width: 312px;
+            min-height: 160px;
+            
+        }
+        &__full-text {
+            display: block;
+            margin-bottom: 10px;
+        }
+        &__img {
+            min-width: 360px;
+            min-height: 260px;
+            background-image: url(/img/cps-768.png);
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+@media (min-width: 1119.98px) {
+    .content {
+        &__text {
+            margin-right: 36px;
+        }
+        &__img {
+            min-width: 531px;
+            min-height: 383px;
+            background-image: url(/img/cps-1120.png);
+            background-repeat: no-repeat;
+        }
     }
 }

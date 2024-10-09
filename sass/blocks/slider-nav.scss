@@ -3,11 +3,9 @@
         display: flex;
         overflow-x: scroll;
         overflow-y: auto;
-        
-    }
-    &__item {
         padding-top: 24px;
-        margin-bottom: 24px;
+        padding-bottom: 24px;
+        
     }
     &__link {
         display: inline-flex;
@@ -31,7 +29,11 @@
         &__items {
             display: flex;
             flex-wrap: wrap;
+            overflow: hidden;
         }
+    &__link {
+        padding: 8px 19px 8px 18px;
+    }
     }
    
 }
