@@ -20,7 +20,7 @@
 
 @media (min-width: 768px) {
     .header {
-        
+
         &__diveder:first-of-type {
             display: block;
         }
@@ -39,21 +39,4 @@
         }
 }
 
-    // .header__inner::after {
-    //     order: -1;
-    //     content: '';
-    //     background-image: url("/img/icons/divider.svg");
-    //     width: 2px;
-    //     height: 32px
-    // }
-
-    // .repair::before {
-       
-    //     content: '';
-    //     background-image: url(/img/icons/ic_checkstatus.svg);
-    //     width: 40px;
-    //     height: 40px;
-    // }
-
-    
 }
