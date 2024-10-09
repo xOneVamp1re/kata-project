@@ -4,28 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CPS - сервисный центр по ремонту техники Dell</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main-file.css">
 </head>
 <body>
     <header class="header">
       <div class="container">
        <div class="header__inner">
-        <button class="menu-btn">
-            <img class="menu-btn__icon" src="img/icons/ic_burger.svg" alt="Menu Button" width="40" height="40" >
+        <button class="button header__menu">
+            <img class="button__menu-icon" src="img/icons/ic_burger.svg" alt="Menu Button" type="button">
         </button>
+        <div class="header__diveder">
+            <img class="header__diveder-img" src="img/icons/divider.svg" alt=""  >
+        </div>
         <div class="logo">
             <a class="logo__link" href="#">
-            <img class="logo__link-image" src="img/icons/header-logo.svg" alt="CPS LOGO" width="97" height="51">
+            <img class="logo__link-image" src="img/icons/header-logo.svg" alt="CPS LOGO"  width="97" height="51">
             </a>
         </div>
-       <div class="diveder">
-            <img class="diverer__icon" src="img/icons/divider.svg" alt=""  >
-       </div>
-        <button class="repair">
-            <img class="repair__icon" src="img/icons/ic_repair.svg" alt="Button Repair" width="40" height="40"  >
+        <button class="button header__icon-call">
+            <img class="button_icon-call" src="img/icons/ic-call.svg" alt="Button Call" type="button" >
         </button>
-        <button class="check-status">
-            <img class="check-status__icon" src="img/icons/ic_checkstatus.svg" alt="Button Check Status" width="40" height="40"  >
+        <button class="button button__icon-chat">
+            <img class="button__icon-chat" src="img/icons/ic-chat.svg" alt="Icon Chat" type="button" >
+        </button>
+        <button class="button haeder__icon-profile">
+            <img class="button__icon-profile" src="img/icons/ic-profile.svg" alt="Icon Profile"  type="button">
+        </button>
+        <div class="header__diveder">
+            <img class="header__diveder-img" src="img/icons/divider.svg" alt=""  >
+        </div>
+        <button class="button header__icon-repair">
+            <img class="button__icon-repair" src="img/icons/ic_repair.svg" alt="Button Repair" type="button">
+        </button>
+        <button class="button header__icon-check-status">
+            <img class="button__icon-check-statuts" src="img/icons/ic_checkstatus.svg" alt="Button Check Status" type="button">
         </button>
        </div>
       </div>
@@ -35,13 +47,48 @@
     <!-- <main class="main">
         <div class="container">
             <div class="main__inner">
-                <h1 class="main-text">
+                <div class="main-page__title">
+                    <h1 class="main__title">
                     Услуги и сервисы
-                </h1>
+                    </h1>
+                </div>
+                <div class="main-page_buttons"></div>
+                <div class="main__menu">
+                    <ul class="main__menu-list">
+                        <li class="main__menu-item"><a class="main__menu-link" href="#">Ремонтируемые бренды</a></li>
+                        <li class="main__menu-item"><a class="main__menu-link" href="#">Ремонтируемые устройства</a></li>
+                        <li class="main__menu-item"><a class="main__menu-link" href="#">Цены на услуги</a></li>
+                        <li class="main__menu-item"><a class="main__menu-link" href="#">Адреса сервисных центров</a></li>
+                        <li class="main__menu-item"><a class="main__menu-link" href="#">Специальные цены</a></li>
+                        <li class="main__menu-item"><a class="main__menu-link" href="#">Отзывы</a></li>
+                    </ul>
+                </div>
+                
             </div>
 
         </div>
     </main> -->
+    <main class="main">
+        <div class="container">
+            <div class="main__header">
+                <h1 class="main__title">Услуги и сервисы</h1>
+                <div class="main__buttons"> 
+                    <div class="button-container main__header-button">
+                        <div class="button__text button-text--before"><span>Оставить заявку</span></div>
+                        <button class="button header__icon-repair">
+                            <img class="button__icon-repair" src="img/icons/ic_repair.svg" alt="Button Repair" type="button">
+                        </button>
+                    </div>
+                    <div class="button-container main__header-button">
+                        <div class="button__text button-text--before"><span>Статус ремонта</span></div>
+                        <button class="button main__header-button-check-status">
+                            <img class="button__icon-repair" src="img/icons/ic_checkstatus.svg" alt="Button Check Status" type="button">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
 </body>
 </html>
