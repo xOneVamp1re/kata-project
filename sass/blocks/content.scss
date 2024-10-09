@@ -26,7 +26,7 @@
     }
     &__read-more::before {
         content: '';
-        background-image: url(/img/icons/ic_arrows.svg);
+        background-image: url(img/icons/ic_arrows.svg);
         background-repeat: no-repeat;
         background-position: center;
         width: 24px;
@@ -34,15 +34,12 @@
         order: -1;
         margin-right: 8px;
     }
-    &__img::after {
-        content: '';
-        position: absolute;
-        width: 320px;
-        height: 230px;
-        background-image: url(/img/cps.png);
+    &__img {
+        min-width: 320px;
+        min-height: 176px;
+        background-image: url(img/cps.png);
         background-repeat: no-repeat;
-
-        
+        background-size: 100%;
 }
 }
 
@@ -62,8 +59,7 @@
         &__img {
             min-width: 360px;
             min-height: 260px;
-            background-image: url(/img/cps-768.png);
-            background-repeat: no-repeat;
+            background-size: 100%;
         }
     }
 }
@@ -76,8 +72,7 @@
         &__img {
             min-width: 531px;
             min-height: 383px;
-            background-image: url(/img/cps-1120.png);
-            background-repeat: no-repeat;
-        }
+            background-size: 100%;
     }
+}
 }
