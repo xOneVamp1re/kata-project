@@ -1,6 +1,8 @@
 .main {
     background-color: rgb(248, 248, 248);
-    &__header {
+    
+    &__header { 
+        position: relative;
         display: flex;
         justify-content: space-between;
         padding-top: 24px;
@@ -17,8 +19,23 @@
     letter-spacing: -0.6px;
     text-align: left;
     }
+    &__title::before {
+        position: absolute;
+        left: -16px;
+        content: '';
+        background-image: url('/img/highlight.svg');
+        height: 40px;
+        width: 4px;
+    }
     &__buttons {
         display: none;
+    }
+}
+@media (min-width: 768px) {
+    .main {
+        &__title::before {
+            left: -24px;
+        }
     }
 }
 
@@ -32,6 +49,10 @@
             display: flex;
             align-items: center;
             column-gap: 9px;
+        }
+        &__title::before {
+            left: -32px;
+            width: 3px;
         }
     }
 }
