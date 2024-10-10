@@ -1,15 +1,21 @@
+.content-wrapper {
+    padding-bottom: 32px;
+}
+
 @media (min-width: 575.98px){
     .content-wrapper {
       max-width: 540px;
       margin: auto;
       padding: 0;
+      padding-bottom: 32px;
     }
   }
   
   @media (min-width: 767.98px){
     .content-wrapper  {
       max-width: 720px;
-      margin: 0 auto;	
+      margin: 0 auto;
+      padding-bottom: 32px;	
     }
   }
   
@@ -17,6 +23,7 @@
     .content-wrapper  {
       max-width: 960px;
       margin: 0 auto;
+      padding-bottom: 32px;
     
     }
   }
@@ -25,5 +32,6 @@
     .content-wrapper  {
       max-width: 1056px;
       margin: 0 auto;
+      padding-bottom: 50px;
     }
   }
