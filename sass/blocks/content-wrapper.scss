@@ -1,0 +1,29 @@
+@media (min-width: 575.98px){
+    .content-wrapper {
+      max-width: 540px;
+      margin: auto;
+      padding: 0;
+    }
+  }
+  
+  @media (min-width: 767.98px){
+    .content-wrapper  {
+      max-width: 720px;
+      margin: 0 auto;	
+    }
+  }
+  
+  @media (min-width: 991.98px) {
+    .content-wrapper  {
+      max-width: 960px;
+      margin: 0 auto;
+    
+    }
+  }
+  
+  @media (min-width: 1119.98px){
+    .content-wrapper  {
+      max-width: 1056px;
+      margin: 0 auto;
+    }
+  }

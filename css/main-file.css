@@ -151,7 +151,7 @@ body {
   align-items: center;
   row-gap: 16px;
 }
-.header__diveder:first-of-type {
+.header__logo-separator {
   display: none;
 }
 .header .button:nth-child(4), .header .button:nth-child(5), .header .button:nth-child(6) {
@@ -162,7 +162,7 @@ body {
 }
 
 @media (min-width: 768px) {
-  .header__diveder:first-of-type {
+  .header__logo-separator {
     display: block;
   }
   .header .button:nth-child(4), .header .button:nth-child(5), .header .button:nth-child(6) {
@@ -196,6 +196,12 @@ body {
   line-height: 24px;
   letter-spacing: -0.2px;
   text-align: right;
+}
+
+.header__separator {
+  background-image: url("../img/icons/separator.svg");
+  width: 2px;
+  height: 32px;
 }
 
 .main {
@@ -272,6 +278,34 @@ body {
   background: white;
 }
 
+@media (min-width: 575.98px) {
+  .content-wrapper {
+    max-width: 540px;
+    margin: auto;
+    padding: 0;
+  }
+}
+@media (min-width: 767.98px) {
+  .content-wrapper {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 991.98px) {
+  .content-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1119.98px) {
+  .content-wrapper {
+    max-width: 1056px;
+    margin: 0 auto;
+  }
+}
+.content__main-text-wrapper {
+  padding: 0 16px;
+}
 .content__text {
   color: #1b1c21;
   font-family: TTLakes;
@@ -307,16 +341,17 @@ body {
   margin-right: 8px;
 }
 .content__img {
-  min-width: 320px;
-  min-height: 176px;
   background-image: url("../img/cps.png");
-  background-repeat: no-repeat;
   background-size: cover;
+  min-height: 176px;
 }
 
 @media (min-width: 768px) {
   .content {
     display: flex;
+  }
+  .content__main-text-wrapper {
+    padding: 0;
   }
   .content__text {
     margin-right: 48px;
@@ -329,8 +364,8 @@ body {
   }
   .content__img {
     min-width: 360px;
-    min-height: 260px;
-    background-size: 100%;
+    min-height: 208px;
+    border-radius: 5px;
   }
 }
 @media (min-width: 1119.98px) {
@@ -339,8 +374,7 @@ body {
   }
   .content__img {
     min-width: 531px;
-    min-height: 383px;
-    background-size: 100%;
+    min-height: 307px;
   }
 }
 
