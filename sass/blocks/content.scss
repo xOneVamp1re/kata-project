@@ -1,4 +1,7 @@
 .content {
+    &__main-text-wrapper {
+        padding: 0 16px;
+    }
     &__text {
     color: rgb(27, 28, 33);
     font-family: TTLakes;
@@ -26,7 +29,7 @@
     }
     &__read-more::before {
         content: '';
-        background-image: url('../img/icons/ic_arrows.SVG');
+        background-image: url('../img/icons/ic_arrows.svg');
         background-repeat: no-repeat;
         background-position: center;
         width: 24px;
@@ -35,17 +38,18 @@
         margin-right: 8px;
     }
     &__img {
-        min-width: 320px;
+        background-image: url('../img/cps.png');
+        background-size: cover;
         min-height: 176px;
-        background-image: url('../img/cps-1120.PNG');
-        background-repeat: no-repeat;
-        background-size: 100%;
 }
 }
 
 @media (min-width: 768px) {
     .content {
         display: flex;
+        &__main-text-wrapper {
+            padding: 0;
+        }
         &__text {
             margin-right: 48px;
             min-width: 312px;
@@ -58,8 +62,8 @@
         }
         &__img {
             min-width: 360px;
-            min-height: 260px;
-            background-size: 100%;
+            min-height: 208px;
+            border-radius: 5px;
         }
     }
 }
@@ -71,8 +75,8 @@
         }
         &__img {
             min-width: 531px;
-            min-height: 383px;
-            background-size: 100%;
+            min-height: 307px;
+            
     }
 }
 }

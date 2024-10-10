@@ -7,7 +7,7 @@
         align-items: center;
         row-gap: 16px;
     }
-    &__diveder:first-of-type {
+    &__logo-separator {
         display: none;
     }
     .button:nth-child(4), .button:nth-child(5), .button:nth-child(6) {
@@ -21,7 +21,7 @@
 @media (min-width: 768px) {
     .header {
 
-        &__diveder:first-of-type {
+        &__logo-separator {
             display: block;
         }
         .button:nth-child(4), .button:nth-child(5), .button:nth-child(6),  {
