@@ -250,7 +250,7 @@ body {
     column-gap: 32px;
   }
   .main__header-button {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     column-gap: 9px;
   }
@@ -371,7 +371,7 @@ body {
 .content__img {
   background-image: url("../img/cps.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   min-height: 176px;
 }
 
