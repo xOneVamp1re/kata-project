@@ -40,10 +40,9 @@
     &__img {
         background-image: url('../img/cps.png');
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: cover;
         min-height: 176px;
-        
-}
+        }
 }
 
 @media (min-width: 768px) {
