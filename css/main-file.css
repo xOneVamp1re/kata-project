@@ -154,7 +154,7 @@ body {
 .header__logo-separator {
   display: none;
 }
-.header .button:nth-child(4), .header .button:nth-child(5), .header .button:nth-child(6) {
+.header__buttons {
   display: none;
 }
 .header__bottom-border {
@@ -165,11 +165,13 @@ body {
   .header__logo-separator {
     display: block;
   }
-  .header .button:nth-child(4), .header .button:nth-child(5), .header .button:nth-child(6) {
-    display: block;
-  }
   .header .logo {
     margin-right: 250px;
+  }
+  .header__buttons {
+    display: flex;
+    gap: 16px;
+    align-items: center;
   }
 }
 @media (min-width: 768px) and (min-width: 1119.98px) {
@@ -368,8 +370,9 @@ body {
 }
 .content__img {
   background-image: url("../img/cps.png");
-  background-size: cover;
-  min-height: 176px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 150px;
 }
 
 @media (min-width: 768px) {
