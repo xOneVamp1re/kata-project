@@ -10,9 +10,9 @@
     &__logo-separator {
         display: none;
     }
-    .button:nth-child(4), .button:nth-child(5), .button:nth-child(6) {
+    &__buttons {
         display: none;
-      }
+    }
     &__bottom-border {
         border-bottom: 1px solid  rgb(217, 255, 245);
     }
@@ -24,11 +24,13 @@
         &__logo-separator {
             display: block;
         }
-        .button:nth-child(4), .button:nth-child(5), .button:nth-child(6),  {
-            display: block;
-        }
         .logo {
             margin-right: 250px;
+        }
+        &__buttons {
+            display: flex;
+            gap: 16px;
+            align-items: center;
         }
        
     }

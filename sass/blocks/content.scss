@@ -39,8 +39,9 @@
     }
     &__img {
         background-image: url('../img/cps.png');
-        background-size: cover;
-        min-height: 176px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        min-height: 150px;
         
 }
 }
