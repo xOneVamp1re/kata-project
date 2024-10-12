@@ -256,6 +256,16 @@ body {
     align-items: center;
     column-gap: 9px;
   }
+  .main__header-icon-repair {
+    background-image: url("../img/icons/ic_repair.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .main__header-icon-check-status {
+    background-image: url("../img/icons/ic_checkstatus.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
   .main__title::before {
     left: -32px;
     width: 3px;
