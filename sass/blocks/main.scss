@@ -50,6 +50,16 @@
             align-items: center;
             column-gap: 9px;
         }
+        &__header-icon-repair {
+            background-image: url('../img/icons/ic_repair.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        &__header-icon-check-status {
+            background-image: url('../img/icons/ic_checkstatus.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+        }
         &__title::before {
             left: -32px;
             width: 3px;
