@@ -95,23 +95,9 @@ body {
   padding: 0 16px;
 }
 
-@media (min-width: 575.98px) {
-  .container {
-    max-width: 540px;
-    margin: auto;
-    padding: 0;
-  }
-}
 @media (min-width: 767.98px) {
   .container {
-    max-width: 720px;
-    margin: 0 auto;
-  }
-}
-@media (min-width: 991.98px) {
-  .container {
-    max-width: 960px;
-    margin: 0 auto;
+    padding: 0 24px;
   }
 }
 @media (min-width: 1119.98px) {
@@ -149,10 +135,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  row-gap: 16px;
+  column-gap: 16px;
 }
 .header__logo-separator {
   display: none;
+}
+.header__logo {
+  margin-right: auto;
 }
 .header__buttons {
   display: none;
@@ -164,9 +153,6 @@ body {
 @media (min-width: 768px) {
   .header__logo-separator {
     display: block;
-  }
-  .header .logo {
-    margin-right: 250px;
   }
   .header__buttons {
     display: flex;
@@ -262,7 +248,6 @@ body {
 .slider-nav__items {
   display: flex;
   overflow-x: scroll;
-  overflow-y: auto;
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -286,7 +271,7 @@ body {
   .slider-nav__items {
     display: flex;
     flex-wrap: wrap;
-    overflow: hidden;
+    overflow-x: initial;
   }
   .slider-nav__link {
     padding: 8px 19px 8px 18px;
@@ -299,29 +284,12 @@ body {
 }
 
 .content-wrapper {
-  padding-bottom: 32px;
+  padding-bottom: 35px;
 }
 
-@media (min-width: 575.98px) {
-  .content-wrapper {
-    max-width: 540px;
-    margin: auto;
-    padding: 0;
-    padding-bottom: 32px;
-  }
-}
 @media (min-width: 767.98px) {
   .content-wrapper {
-    max-width: 720px;
-    margin: 0 auto;
-    padding-bottom: 32px;
-  }
-}
-@media (min-width: 991.98px) {
-  .content-wrapper {
-    max-width: 960px;
-    margin: 0 auto;
-    padding-bottom: 32px;
+    padding: 0 24px;
   }
 }
 @media (min-width: 1119.98px) {
@@ -330,6 +298,10 @@ body {
     margin: 0 auto;
     padding-bottom: 50px;
   }
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
 }
 .content__main-text-wrapper {
   padding: 0 16px;
@@ -369,21 +341,23 @@ body {
   margin-right: 8px;
 }
 .content__img {
-  background-image: url("../img/cps.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 176px;
+  flex-shrink: 0;
+  width: 100%;
+  object-fit: cover;
 }
 
 @media (min-width: 768px) {
   .content {
-    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    column-gap: 48px;
   }
   .content__main-text-wrapper {
     padding: 0;
+    min-width: 312px;
+    min-height: 160px;
   }
   .content__text {
-    margin-right: 48px;
     min-width: 312px;
     min-height: 160px;
   }
@@ -392,18 +366,19 @@ body {
     margin-bottom: 10px;
   }
   .content__img {
-    min-width: 360px;
-    min-height: 208px;
+    width: 50%;
     border-radius: 5px;
   }
 }
 @media (min-width: 1119.98px) {
-  .content__text {
-    margin-right: 36px;
+  .content {
+    column-gap: 36px;
   }
   .content__img {
-    min-width: 531px;
-    min-height: 307px;
+    margin: 0;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
   }
 }
 

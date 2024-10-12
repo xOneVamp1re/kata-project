@@ -2,7 +2,6 @@
     &__items {
         display: flex;
         overflow-x: scroll;
-        overflow-y: auto;
         padding-top: 24px;
         padding-bottom: 24px;
         
@@ -29,7 +28,7 @@
         &__items {
             display: flex;
             flex-wrap: wrap;
-            overflow: hidden;
+            overflow-x: initial;
         }
     &__link {
         padding: 8px 19px 8px 18px;

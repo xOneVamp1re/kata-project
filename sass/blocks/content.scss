@@ -1,4 +1,6 @@
 .content {
+    display: flex;
+    flex-wrap: wrap;
     &__main-text-wrapper {
         padding: 0 16px;
     }
@@ -38,32 +40,32 @@
         margin-right: 8px;
     }
     &__img {
-        background-image: url('../img/cps.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        min-height: 176px;
+        flex-shrink: 0;
+        width: 100%;
+        object-fit: cover;
         }
 }
 
 @media (min-width: 768px) {
     .content {
-        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        column-gap: 48px;
         &__main-text-wrapper {
             padding: 0;
+            min-width: 312px;
+            min-height: 160px; 
         }
         &__text {
-            margin-right: 48px;
             min-width: 312px;
-            min-height: 160px;
-            
+            min-height: 160px;       
         }
         &__full-text {
             display: block;
             margin-bottom: 10px;
         }
         &__img {
-            min-width: 360px;
-            min-height: 208px;
+            width: 50%;
             border-radius: 5px;
         }
     }
@@ -71,13 +73,12 @@
 
 @media (min-width: 1119.98px) {
     .content {
-        &__text {
-            margin-right: 36px;
-        }
+        column-gap: 36px;
         &__img {
-            min-width: 531px;
-            min-height: 307px;
-            
+            margin: 0;
+		    width: 50%;
+		    height: 50%;
+		    object-fit: cover;       
     }
 }
 }
