@@ -20,6 +20,13 @@
         letter-spacing: -0.2px;
         text-align: left;
         white-space: nowrap;
+
+        border: 2px solid transparent;
+    }
+    &__link:hover {
+        border: 2px solid rgb(184, 255, 236);
+        border-radius: 6px;
+        background: rgb(255, 255, 255);
     }
 }
 
@@ -31,7 +38,7 @@
             overflow-x: initial;
         }
     &__link {
-        padding: 8px 19px 8px 18px;
+        padding: 8px 17px 8px 17px;
     }
     }
    

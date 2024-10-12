@@ -281,6 +281,12 @@ body {
   letter-spacing: -0.2px;
   text-align: left;
   white-space: nowrap;
+  border: 2px solid transparent;
+}
+.slider-nav__link:hover {
+  border: 2px solid #b8ffec;
+  border-radius: 6px;
+  background: white;
 }
 
 @media (min-width: 1119.98px) {
@@ -290,15 +296,9 @@ body {
     overflow-x: initial;
   }
   .slider-nav__link {
-    padding: 8px 19px 8px 18px;
+    padding: 8px 17px 8px 17px;
   }
 }
-.active {
-  border: 2px solid #b8ffec;
-  border-radius: 6px;
-  background: white;
-}
-
 .content-wrapper {
   padding-bottom: 35px;
 }
