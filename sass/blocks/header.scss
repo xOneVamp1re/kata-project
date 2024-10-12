@@ -5,10 +5,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        row-gap: 16px;
+        column-gap: 16px;
     }
     &__logo-separator {
         display: none;
+    }
+    &__logo {
+        margin-right: auto;
     }
     &__buttons {
         display: none;
@@ -23,9 +26,6 @@
 
         &__logo-separator {
             display: block;
-        }
-        .logo {
-            margin-right: 250px;
         }
         &__buttons {
             display: flex;
