@@ -1,9 +1,12 @@
 .slider-nav {
+    margin-left:-16px;
+    margin-right:-16px;
     &__items {
         display: flex;
         overflow-x: scroll;
-        padding-top: 24px;
-        padding-bottom: 24px;
+        padding-left: 16px;
+        padding-top: 8px;
+        padding-bottom: 8px;
         
     }
     &__link {
@@ -29,10 +32,20 @@
         background: rgb(255, 255, 255);
     }
 }
-
+@media (min-width: 767.98px) {
+    .slider-nav {
+        margin-left:-24px;
+        margin-right:-24px;
+        &__items {
+            padding-left: 24px
+        }
+    }
+}
 @media (min-width: 1119.98px) {
     .slider-nav {
+        margin: 0;
         &__items {
+            padding-left: 0;
             display: flex;
             flex-wrap: wrap;
             overflow-x: initial;
