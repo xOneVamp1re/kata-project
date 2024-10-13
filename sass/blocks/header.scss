@@ -1,5 +1,6 @@
 .header {
     background-color: #fff;
+    padding: 0 16px;
     &__inner {
         min-height: 87px;
         display: flex;
@@ -23,7 +24,7 @@
 
 @media (min-width: 768px) {
     .header {
-
+        padding: 0 40px 0 24px;
         &__logo-separator {
             display: block;
         }

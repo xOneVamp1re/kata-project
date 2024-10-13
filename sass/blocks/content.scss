@@ -1,10 +1,15 @@
 .content {
     display: flex;
     flex-wrap: wrap;
-    &__main-text-wrapper {
-        padding: 0 16px;
-    }
+    margin-left: -16px;
+    margin-right: -16px;
+    padding-top: 16px;
     &__text {
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    flex-shrink: 1;
     color: rgb(27, 28, 33);
     font-family: TTLakes;
     font-size: 14px;
@@ -13,15 +18,16 @@
     letter-spacing: 0.2px;
     text-align: left;
     }
-    &__main-text {
-        margin-bottom: 16px;
-    }
     &__full-text {
+        display: none;
+    }
+    &__text--desc768 {
         display: none;
     }
 
     &__read-more {
-        display: inline-flex;
+        display: flex;
+        max-width: 132px;
         color: inherit;
         margin-bottom: 16px;
         font-size: 16px;
@@ -48,21 +54,17 @@
 
 @media (min-width: 768px) {
     .content {
+        margin: 0;
+        padding-top: 24px;
         justify-content: space-between;
         flex-wrap: nowrap;
         column-gap: 48px;
-        &__main-text-wrapper {
-            padding: 0;
+        &__text{
             min-width: 312px;
-            min-height: 160px; 
+            padding: 0;    
         }
-        &__text {
-            min-width: 312px;
-            min-height: 160px;       
-        }
-        &__full-text {
+        &__text--desc768 {
             display: block;
-            margin-bottom: 10px;
         }
         &__img {
             width: 50%;
@@ -74,6 +76,12 @@
 @media (min-width: 1119.98px) {
     .content {
         column-gap: 36px;
+        &__text--desc768 {
+            display: none;
+        }
+        &__full-text {  
+            display: block;
+        }
         &__img {
             margin: 0;
 		    width: 50%;
