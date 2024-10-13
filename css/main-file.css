@@ -326,23 +326,6 @@ body {
     padding: 8px 17px 8px 17px;
   }
 }
-.content-wrapper {
-  padding-bottom: 35px;
-}
-
-@media (min-width: 767.98px) {
-  .content-wrapper {
-    padding: 0 24px;
-  }
-}
-@media (min-width: 1119.98px) {
-  .content-wrapper {
-    padding: 0;
-    max-width: 1056px;
-    margin: 0 auto;
-    padding-bottom: 50px;
-  }
-}
 .content {
   display: flex;
   flex-wrap: wrap;
