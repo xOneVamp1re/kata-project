@@ -173,25 +173,26 @@ body {
     display: none;
   }
 }
-.button {
+.burger-button {
   width: 40px;
   height: 40px;
-  background-color: #FF3E79;
   border-radius: 20px;
+  background-color: #FF3E79;
   display: flex;
 }
-.button img {
+.burger-button img {
   margin: auto;
 }
 
-.button-text--before {
-  color: #1b1c21;
-  font-family: 'TTLakes';
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: -0.2px;
-  text-align: right;
+.action-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #FF3E79;
+  display: flex;
+}
+.action-button img {
+  margin: auto;
 }
 
 .header__separator {
@@ -230,7 +231,7 @@ body {
   height: 40px;
   width: 4px;
 }
-.main__buttons {
+.main__header-actions {
   display: none;
 }
 
@@ -245,22 +246,29 @@ body {
 @media (min-width: 1119.98px) {
   .main__header {
     padding-top: 41px;
+    margin-bottom: 0;
   }
-  .main__buttons {
+  .main__header-actions {
     display: flex;
     column-gap: 32px;
   }
-  .main__header-button {
+  .main__header-action {
     display: inline-flex;
     align-items: center;
     column-gap: 9px;
   }
-  .main__header-icon-repair {
+  .main__header-action-text {
+    color: #1b1c21;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+  }
+  .main__header-action-icon-repair {
     background-image: url("../img/icons/ic_repair.svg");
     background-position: center;
     background-repeat: no-repeat;
   }
-  .main__header-icon-check-status {
+  .main__header-action-icon-check-status {
     background-image: url("../img/icons/ic_checkstatus.svg");
     background-position: center;
     background-repeat: no-repeat;
@@ -368,9 +376,11 @@ body {
   margin-right: 8px;
 }
 .content__img {
-  flex-shrink: 0;
+  background-image: url("../img/cps.png");
+  background-repeat: no-repeat;
   width: 100%;
-  object-fit: cover;
+  background-size: cover;
+  aspect-ratio: 16 / 9;
 }
 
 @media (min-width: 768px) {
@@ -382,22 +392,24 @@ body {
     column-gap: 48px;
   }
   .content__text {
-    min-width: 312px;
     padding: 0;
+    flex-basis: 47.6%;
   }
   .content__img {
-    width: 50%;
     border-radius: 5px;
+    flex-basis: 52.4%;
   }
 }
 @media (min-width: 1119.98px) {
   .content {
+    padding-top: 0;
     column-gap: 36px;
   }
+  .content__text {
+    flex-basis: 48%;
+  }
   .content__img {
-    width: 50%;
-    height: 50%;
-    object-fit: cover;
+    flex-basis: 52%;
   }
 }
 .text-wrapper {
