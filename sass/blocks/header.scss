@@ -14,7 +14,7 @@
     &__logo {
         margin-right: auto;
     }
-    &__buttons {
+    &__buttons--tablet {
         display: none;
     }
     &__bottom-border {
@@ -28,7 +28,7 @@
         &__logo-separator {
             display: block;
         }
-        &__buttons {
+        &__buttons--tablet {
             display: flex;
             gap: 16px;
             align-items: center;

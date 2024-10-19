@@ -148,7 +148,7 @@ body {
 .header__logo {
   margin-right: auto;
 }
-.header__buttons {
+.header__buttons--tablet {
   display: none;
 }
 .header__bottom-border {
@@ -162,7 +162,7 @@ body {
   .header__logo-separator {
     display: block;
   }
-  .header__buttons {
+  .header__buttons--tablet {
     display: flex;
     gap: 16px;
     align-items: center;
@@ -176,23 +176,25 @@ body {
 .burger-button {
   width: 40px;
   height: 40px;
-  border-radius: 20px;
   background-color: #FF3E79;
   display: flex;
-}
-.burger-button img {
-  margin: auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-out;
 }
 
 .action-button {
   width: 40px;
   height: 40px;
-  border-radius: 20px;
   background-color: #FF3E79;
   display: flex;
-}
-.action-button img {
-  margin: auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-out;
 }
 
 .header__separator {
@@ -263,12 +265,12 @@ body {
     font-weight: 500;
     letter-spacing: -0.2px;
   }
-  .main__header-action-icon-repair {
+  .main__header-action--icon-repair {
     background-image: url("../img/icons/ic_repair.svg");
     background-position: center;
     background-repeat: no-repeat;
   }
-  .main__header-action-icon-check-status {
+  .main__header-action--icon-check-status {
     background-image: url("../img/icons/ic_checkstatus.svg");
     background-position: center;
     background-repeat: no-repeat;
