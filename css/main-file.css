@@ -186,6 +186,10 @@ body {
   transition: all 0.2s ease-out;
 }
 
+.icon {
+  width: 16px;
+  height: 16px;
+}
 .icon--logo {
   width: 97.25px;
   height: 51.31px;
