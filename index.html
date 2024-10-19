@@ -11,32 +11,30 @@
 <body>
     <header class="header">
        <div class="header__inner">
-        <button class="burger-button header__button--burger" type="button">
-            <img class="button__burger-icon" src="img/icons/ic_burger.svg" alt="Кнопка меню">
+        <button class="action-button header__button--burger" aria-label="Кнопка меню" type="button">
+            <svg class="icon icon--burger"><use href="img/icons/sprites.svg#ic_burger"></use></svg>
         </button>
         <div class="header__separator header__logo-separator"></div>
-        <div class="header__logo logo">
-            <a class="logo__link" href="#">
-            <img class="logo__link-image" src="img/icons/header-logo.svg" alt="Логотип компании CPS"  width="97" height="51">
-            </a>
-        </div>
+        <a class="header__logo logo" href="#!" aria-label="Логотип компании">
+            <svg class="icon icon--logo"><use href="img/icons/sprites.svg#ic_logo"></use></svg>
+        </a>
         <div class="header__buttons--tablet">
             <button class="action-button header__button--call" type="button">
-                <img class="header__button-call-icon" src="img/icons/ic-call.svg" alt="Кнопка вызова">
+                <svg class="icon icon--call"><use href="img/icons/sprites.svg#ic_call"></use></svg>
             </button>
             <button class="action-button header__button--chat"  type="button">
-                <img class="header__button-icon-chat" src="img/icons/ic-chat.svg" alt="Кнопка чата">
+                <svg class="icon icon--chat"><use href="img/icons/sprites.svg#ic_chat"></use></svg>
             </button>
             <button class="action-button header__button--profile" type="button">
-                <img class="header__button-icon-profile" src="img/icons/ic-profile.svg" alt="Кнопка профиля">
+                <svg class="icon icon--profile"><use href="img/icons/sprites.svg#ic_profile"></use></svg>
             </button>
         </div>
             <div class="header__separator"></div>
-            <button class="action-button header__button--repair" type="button">
-                <img class="header__button-icon-repair" src="img/icons/ic_repair.svg" alt="Кнопка оправить заявку">
+            <button class="action-button header__button--repair" aria-label='Кнопка отправить заявку' type="button">
+                <svg class="icon icon--repair"><use href="img/icons/sprites.svg#ic_repair"></use></svg>
             </button>
-            <button class="action-button header__button--check-status"  type="button">
-                <img class="header__button-icon-check-statuts" src="img/icons/ic_checkstatus.svg" alt="Кнопка проверки статуса">
+            <button class="action-button header__button--check-status" aria-label="Кнопка проверки статуса" type="button">
+                <svg class="icon icon--check-status"><use href="img/icons/sprites.svg#ic_check-status"></use></svg>
             </button>      
         </div>
       <div class="header__bottom-border"></div>
@@ -49,11 +47,15 @@
                 <div class="main__header-actions"> 
                     <a class="main__header-action" href="#!">
                         <span class="main__header-action-text main__header-action--repair-text">Оставить заявку</span>
-                        <div class="action-button main__header-action--icon-repair"></div>
+                        <div class="action-button main__header-action--icon-repair">
+                            <svg class="icon icon--repair"><use href="img/icons/sprites.svg#ic_repair"></use></svg>
+                        </div>
                     </a>
                     <a class="main__header-action" href="#!">
                         <span class="main__header-action-text main__header-action--check-status-text">Статус ремонта</span>
-                        <div class="action-button main__header-action--icon-check-status"></div>
+                        <div class="action-button main__header-action--icon-check-status">
+                            <svg class="icon icon--check-status"><use href="img/icons/sprites.svg#ic_check-status"></use></svg>
+                        </div>
                     </a>
                 </div>
             </header>
@@ -69,15 +71,15 @@
                 </ul>
             </nav>
             
-                <article class="content">
-                    <section class="content__text">
+                <article class="about-us">
+                    <section class="about-us__text">
                             <div class="text-wrapper">
-                            <p class='content__main-text'>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                            <p class='content__full-text'>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+                            <p class='about-us__main-text'>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                            <p class='about-us__full-text'>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
                             </div>
-                            <button class="content__read-more" type="button">Читать далее</button>
+                            <button class="about-us__read-more" type="button">Читать далее</button>
                     </section>
-                    <div class="content__img"></div>  
+                        <img class="about-us__img" src="img/company.jpg" alt="Фото из офиса компании">
                 </article>
         </div>           
     </main>

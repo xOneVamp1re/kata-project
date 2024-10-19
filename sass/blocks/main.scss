@@ -24,7 +24,8 @@
         position: absolute;
         left: -16px;
         content: '';
-        background-image: url('../img/highlight.svg');
+        border-radius: 0 50px 50px 0;
+        background-color: #41F6D7;
         height: 40px;
         width: 4px;
     }
@@ -63,16 +64,6 @@
             font-size: 16px;
             font-weight: 500;
             letter-spacing: -0.2px;
-        }
-        &__header-action--icon-repair {
-            background-image: url('../img/icons/ic_repair.svg');
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-        &__header-action--icon-check-status {
-            background-image: url('../img/icons/ic_checkstatus.svg');
-            background-position: center;
-            background-repeat: no-repeat;
         }
         &__title::before {
             left: -32px;
